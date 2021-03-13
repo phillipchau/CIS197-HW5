@@ -1,16 +1,14 @@
 const defaultState = {
-    image:'',
-    description:''
+  image: '',
+  description: '',
 }
 
 const EditIntroReducer = (state = defaultState, action) => {
-    const {type, image, description} = action
-    if (type === 'EDIT_INTRO') {
-        return {image, description}
-    }
-    else {
-        return state
-    }
+  const { type, image, description } = action
+  if (type === 'EDIT_INTRO') {
+    return { image, description }
+  }
+  return state
 }
 
 export default EditIntroReducer

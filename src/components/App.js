@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import IntroWrapper from './IntroWrapper'
+import PostWrapper from './PostWrapper'
 import '../styles/App.css'
 
-const App = () => {
-  const [edit, setEdit] = useState(false)
-  return (
-    <>
-      <IntroWrapper/>
-    </>
-  )
-}
+const App = () => (
+  <>
+    <IntroWrapper />
+    <PostWrapper />
+  </>
+)
 export default App
