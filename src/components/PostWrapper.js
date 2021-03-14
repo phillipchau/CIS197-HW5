@@ -24,6 +24,24 @@ const PostWrapper = ({dispatchAddPost, dispatchModifyPost, dispatchDeletePost, P
       </h1>
       <div id="postForm" className="postForm">
         <div className="wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <h2 style={{ float: 'left' }}>New Post</h2>
+              </div>
+              <div className="col">
+                <button
+                  style={{ float: 'right' }}
+                  onClick={() => {
+                    document.getElementById('postForm').style.display = 'none'
+                  }}
+                  type="button"
+                  className="btn-close"
+                  aria-label="Close"
+                />
+              </div>
+            </div>
+          </div>
           <PostsForm
             t=""
             pic=""
